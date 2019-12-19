@@ -1,0 +1,1152 @@
+{
+    "id": "a8be145b96af34fad4f5a76e65c7d2e7",
+    "name": "Pivotal Tracker",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "3ac5f84b3df067a2d92a415818de6768",
+            "name": "Get Tokens Active",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/tokens\/active",
+            "description": "Returns an API token associated with the user. This method requires HTTP Basic authentication.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "efa31bee930577be1c33ab698c1d5fb5",
+            "name": "Post Tokens Active",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/tokens\/active",
+            "description": "Returns an API token associated with the user.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "The user's name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "password",
+                    "description": "The user's password.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "15e05eb24aeac0ccf6c3ad975383451a",
+            "name": "Get Activities",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/activities",
+            "description": "Retrieves the recent activity of all your projects.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "limit",
+                    "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "occurred_since_date",
+                    "description": "Restricts the activity feed to only those items that occurred after a supplied date (example format: 2009\/12\/18 21:00:00 UTC)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newer_than_version",
+                    "description": "Restricts the activity feed to only those items that have a greater than supplied version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "13dc1a20dc888912fd5e62d097b9e1ad",
+            "name": "Get Projects Project Activities",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/activities",
+            "description": "Retrieves the recent activity of a specific project.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "limit",
+                    "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "occurred_since_date",
+                    "description": "Restricts the activity feed to only those items that occurred after a supplied date (example format: 2009\/12\/18 21:00:00 UTC)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "a57baab63bbaeb953baeac76ae429092",
+            "name": "Get Projects Project",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}",
+            "description": "Retrieves information about a project.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "147e9d71c7a7efee87e97b6fe9ca99b7",
+            "name": "Get Projects",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects",
+            "description": "Retrieves all of the user's projects.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "99fb36a82b2faca49257e17a25e0e654",
+            "name": "Post Projects",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects",
+            "description": "Adds a new project.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1838db6bdeb408873c465564280bfbda",
+            "name": "Get Projects Project Memberships",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/memberships",
+            "description": "Retrieves all memberships for a project.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "15e50151a7c9c34fa61766cb6fccf286",
+            "name": "Post Projects Project Memberships",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/memberships",
+            "description": "Adds a new membership to a project.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "4c206a928139af5c7373d455fb7852f5",
+            "name": "Get Projects Project Memberships Membership",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/memberships\/{MEMBERSHIP_ID}",
+            "description": "Retrieves information about a single membership.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "MEMBERSHIP_ID",
+                    "description": "The ID of the membership",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "982de4aec541af3587efa6d223ea1c3a",
+            "name": "Delete Projects Project Memberships Membership",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/memberships\/{MEMBERSHIP_ID}",
+            "description": "Delete projects project memberships membership.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "MEMBERSHIP_ID",
+                    "description": "The ID of the membership",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "195d8a877ff01b5d13d1c18dfeeb9742",
+            "name": "Get Projects Project Iterations",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/iterations",
+            "description": "Retrieves all iterations, with stories.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "7815e37af0044f809d5305d90fa1722d",
+            "name": "Get Projects Project Iterations Done",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/iterations\/done",
+            "description": "Retrieves iterations from the \"done\" group, with stories.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Controls the number of iterations to skip from the beginning of the result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "746e610eb1de98c377859e177763d06d",
+            "name": "Get Projects Project Iterations Current",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/iterations\/current",
+            "description": "Retrieves iterations from the \"current\" group, with stories.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "476fc9e58fb58033c023cb1ba89a44b1",
+            "name": "Get Projects Project Iterations Backlog",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/iterations\/backlog",
+            "description": "Retrieves iterations from the \"backlog\" group, with stories.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Controls the number of iterations to skip from the beginning of the result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c820ddd931f9d1f5bf7e65eb8a4319c",
+            "name": "Get Projects Project Iterations Current Backlog",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/iterations\/current_backlog",
+            "description": "Retrieves iterations from the \"current\" and \"backlog\" groups, with stories.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Controls the number of iterations to skip from the beginning of the result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "d6f77eeac249b898a8eddd7d39a50ab9",
+            "name": "Get Projects Project Stories Story",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}",
+            "description": "Retrieves information about a single story.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "STORY_ID",
+                    "description": "The ID of the story",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c5c32829a5aaa7129994b53c088dd49",
+            "name": "Put Projects Project Stories Story",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}",
+            "description": "Put projects project stories story.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "STORY_ID",
+                    "description": "The ID of the story",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "f95adfbde663be73dedd583d07bf42cf",
+            "name": "Delete Projects Project Stories Story",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}",
+            "description": "Delete projects project stories story.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "STORY_ID",
+                    "description": "The ID of the story",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "b977cb081a9b73c31e9aebdab37ea534",
+            "name": "Get Projects Project Stories",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories",
+            "description": "Retrieves all stories for a project, or those matching filter(s)",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "filter",
+                    "description": "A filter for the returned stories to match. See the API documentation for more details.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Controls the number of iterations to skip from the beginning of the result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "7ca8fcfb532d7318200f1d56703b5d9f",
+            "name": "Post Projects Project Stories",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories",
+            "description": "Post projects project stories.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "0af199be64631a74aa96b91583dd3587",
+            "name": "Put Projects Project Stories Story Notes",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/notes",
+            "description": "Put projects project stories story notes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "STORY_ID",
+                    "description": "The ID of the story",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "c8a88ca96121b4d121d1ff17c11dd92f",
+            "name": "Post Projects Project Stories Deliver All Finished",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/deliver_all_finished",
+            "description": "Takes all finished stories and marks them as delivered. This could be used to automate a demo deploy process. The updated stories are returned as the result.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "f78ba8a790df14f34603e9e7605e4875",
+            "name": "Post Projects Project Stories Story Moves",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/moves",
+            "description": "Moves a story before or after another story. The moved story is returned in the response.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "STORY_ID",
+                    "description": "The ID of the story",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "4fdf5868a90e47b9a7fc9f5065aa4afd",
+            "name": "Get Projects Project Stories Story Tasks Task",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks\/{TASK_ID}",
+            "description": "Get projects project stories story tasks task.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "STORY_ID",
+                    "description": "The ID of the story",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "TASK_ID",
+                    "description": "The ID of the task",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "05377b504e9b0a527259bf48bed1ae66",
+            "name": "Put Projects Project Stories Story Tasks Task",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks\/{TASK_ID}",
+            "description": "Put projects project stories story tasks task.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "STORY_ID",
+                    "description": "The ID of the story",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "TASK_ID",
+                    "description": "The ID of the task",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "46ce6ea15637e0e54d845acd0c5195c8",
+            "name": "Delete Projects Project Stories Story Tasks Task",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks\/{TASK_ID}",
+            "description": "Delete projects project stories story tasks task.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "STORY_ID",
+                    "description": "The ID of the story",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "TASK_ID",
+                    "description": "The ID of the task",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "eeb446c0b5add8dc3f28295ed7d04935",
+            "name": "Get Projects Project Stories Story Tasks",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks",
+            "description": "Get projects project stories story tasks.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "STORY_ID",
+                    "description": "The ID of the story",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "373e2ada3886e0912abb2768b5adf3e2",
+            "name": "Post Projects Project Stories Story Tasks",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks",
+            "description": "Post projects project stories story tasks.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "STORY_ID",
+                    "description": "The ID of the story",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "37ce22d12485cce8a81c0a8e3ba4ad46",
+            "name": "Post Projects Project Stories Story Attachments",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/attachments",
+            "description": "Post projects project stories story attachments.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PROJECT_ID",
+                    "description": "The ID of the project to retrieve the activity for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "STORY_ID",
+                    "description": "The ID of the story",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1b7ba28af4452958dac0da45ada8e224",
+            "name": "Post Source Commits",
+            "url": "httpswww.pivotaltracker.com\/services\/v3\/\/source_commits",
+            "description": "Allows integration with post-commit hooks of Source Control Management (SCM) systems such as Subversion, Git, etc.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "rawModeData": ""
+        }
+    ]
+}
