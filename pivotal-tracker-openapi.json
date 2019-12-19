@@ -1,0 +1,588 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Pivotal Tracker",
+        "description": "Access and manipulate agile project management data including projects, stories and tasks.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.pivotaltracker.com\/services\/v3\/"
+    ],
+    "paths": {
+        "\/tokens\/active": {
+            "get": {
+                "summary": "Get Tokens Active",
+                "description": "Returns an API token associated with the user. This method requires HTTP Basic authentication.",
+                "operationId": "GetTokensActive",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post Tokens Active",
+                "description": "Returns an API token associated with the user.",
+                "operationId": "PostTokensActive",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "description": "The user's name."
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "The user's password."
+                    }
+                ]
+            }
+        },
+        "\/activities": {
+            "get": {
+                "summary": "Get Activities",
+                "description": "Retrieves the recent activity of all your projects.",
+                "operationId": "GetActivities",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100"
+                    },
+                    {
+                        "name": "occurred_since_date",
+                        "in": "query",
+                        "description": "Restricts the activity feed to only those items that occurred after a supplied date (example format: 2009\/12\/18 21:00:00 UTC)"
+                    },
+                    {
+                        "name": "newer_than_version",
+                        "in": "query",
+                        "description": "Restricts the activity feed to only those items that have a greater than supplied version"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/activities": {
+            "get": {
+                "summary": "Get Projects Project Activities",
+                "description": "Retrieves the recent activity of a specific project.",
+                "operationId": "GetProjectsProjectActivities",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100"
+                    },
+                    {
+                        "name": "occurred_since_date",
+                        "in": "query",
+                        "description": "Restricts the activity feed to only those items that occurred after a supplied date (example format: 2009\/12\/18 21:00:00 UTC)"
+                    },
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}": {
+            "get": {
+                "summary": "Get Projects Project",
+                "description": "Retrieves information about a project.",
+                "operationId": "GetProjectsProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            }
+        },
+        "\/projects": {
+            "get": {
+                "summary": "Get Projects",
+                "description": "Retrieves all of the user's projects.",
+                "operationId": "GetProjects",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post Projects",
+                "description": "Adds a new project.",
+                "operationId": "PostProjects",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/memberships": {
+            "get": {
+                "summary": "Get Projects Project Memberships",
+                "description": "Retrieves all memberships for a project.",
+                "operationId": "GetProjectsProjectMemberships",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Projects Project Memberships",
+                "description": "Adds a new membership to a project.",
+                "operationId": "PostProjectsProjectMemberships",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/memberships\/{MEMBERSHIP_ID}": {
+            "get": {
+                "summary": "Get Projects Project Memberships Membership",
+                "description": "Retrieves information about a single membership.",
+                "operationId": "GetProjectsProjectMembershipsMembership",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "MEMBERSHIP_ID",
+                        "in": "path",
+                        "description": "The ID of the membership"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Projects Project Memberships Membership",
+                "description": "Delete projects project memberships membership.",
+                "operationId": "DeleteProjectsProjectMembershipsMembership",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "MEMBERSHIP_ID",
+                        "in": "path",
+                        "description": "The ID of the membership"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/iterations": {
+            "get": {
+                "summary": "Get Projects Project Iterations",
+                "description": "Retrieves all iterations, with stories.",
+                "operationId": "GetProjectsProjectIterations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/iterations\/done": {
+            "get": {
+                "summary": "Get Projects Project Iterations Done",
+                "description": "Retrieves iterations from the \"done\" group, with stories.",
+                "operationId": "GetProjectsProjectIterationsDone",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Controls the number of iterations to skip from the beginning of the result."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100"
+                    },
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/iterations\/current": {
+            "get": {
+                "summary": "Get Projects Project Iterations Current",
+                "description": "Retrieves iterations from the \"current\" group, with stories.",
+                "operationId": "GetProjectsProjectIterationsCurrent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/iterations\/backlog": {
+            "get": {
+                "summary": "Get Projects Project Iterations Backlog",
+                "description": "Retrieves iterations from the \"backlog\" group, with stories.",
+                "operationId": "GetProjectsProjectIterationsBacklog",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Controls the number of iterations to skip from the beginning of the result."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100"
+                    },
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/iterations\/current_backlog": {
+            "get": {
+                "summary": "Get Projects Project Iterations Current Backlog",
+                "description": "Retrieves iterations from the \"current\" and \"backlog\" groups, with stories.",
+                "operationId": "GetProjectsProjectIterationsCurrentBacklog",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Controls the number of iterations to skip from the beginning of the result."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100"
+                    },
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}": {
+            "get": {
+                "summary": "Get Projects Project Stories Story",
+                "description": "Retrieves information about a single story.",
+                "operationId": "GetProjectsProjectStoriesStory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "STORY_ID",
+                        "in": "path",
+                        "description": "The ID of the story"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Projects Project Stories Story",
+                "description": "Put projects project stories story.",
+                "operationId": "PutProjectsProjectStoriesStory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "STORY_ID",
+                        "in": "path",
+                        "description": "The ID of the story"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Projects Project Stories Story",
+                "description": "Delete projects project stories story.",
+                "operationId": "DeleteProjectsProjectStoriesStory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "STORY_ID",
+                        "in": "path",
+                        "description": "The ID of the story"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/stories": {
+            "get": {
+                "summary": "Get Projects Project Stories",
+                "description": "Retrieves all stories for a project, or those matching filter(s)",
+                "operationId": "GetProjectsProjectStories",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "A filter for the returned stories to match. See the API documentation for more details."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Controls the number of iterations to skip from the beginning of the result."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of activity feed items. Note the default value is 10, and there is a upper cap of 100"
+                    },
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Projects Project Stories",
+                "description": "Post projects project stories.",
+                "operationId": "PostProjectsProjectStories",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/notes": {
+            "put": {
+                "summary": "Put Projects Project Stories Story Notes",
+                "description": "Put projects project stories story notes.",
+                "operationId": "PutProjectsProjectStoriesStoryNotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "STORY_ID",
+                        "in": "path",
+                        "description": "The ID of the story"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/stories\/deliver_all_finished": {
+            "post": {
+                "summary": "Post Projects Project Stories Deliver All Finished",
+                "description": "Takes all finished stories and marks them as delivered. This could be used to automate a demo deploy process. The updated stories are returned as the result.",
+                "operationId": "PostProjectsProjectStoriesDeliverAllFinished",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/moves": {
+            "post": {
+                "summary": "Post Projects Project Stories Story Moves",
+                "description": "Moves a story before or after another story. The moved story is returned in the response.",
+                "operationId": "PostProjectsProjectStoriesStoryMoves",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "STORY_ID",
+                        "in": "path",
+                        "description": "The ID of the story"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks\/{TASK_ID}": {
+            "get": {
+                "summary": "Get Projects Project Stories Story Tasks Task",
+                "description": "Get projects project stories story tasks task.",
+                "operationId": "GetProjectsProjectStoriesStoryTasksTask",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "STORY_ID",
+                        "in": "path",
+                        "description": "The ID of the story"
+                    },
+                    {
+                        "name": "TASK_ID",
+                        "in": "path",
+                        "description": "The ID of the task"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Projects Project Stories Story Tasks Task",
+                "description": "Put projects project stories story tasks task.",
+                "operationId": "PutProjectsProjectStoriesStoryTasksTask",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "STORY_ID",
+                        "in": "path",
+                        "description": "The ID of the story"
+                    },
+                    {
+                        "name": "TASK_ID",
+                        "in": "path",
+                        "description": "The ID of the task"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Projects Project Stories Story Tasks Task",
+                "description": "Delete projects project stories story tasks task.",
+                "operationId": "DeleteProjectsProjectStoriesStoryTasksTask",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "STORY_ID",
+                        "in": "path",
+                        "description": "The ID of the story"
+                    },
+                    {
+                        "name": "TASK_ID",
+                        "in": "path",
+                        "description": "The ID of the task"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks": {
+            "get": {
+                "summary": "Get Projects Project Stories Story Tasks",
+                "description": "Get projects project stories story tasks.",
+                "operationId": "GetProjectsProjectStoriesStoryTasks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "STORY_ID",
+                        "in": "path",
+                        "description": "The ID of the story"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Projects Project Stories Story Tasks",
+                "description": "Post projects project stories story tasks.",
+                "operationId": "PostProjectsProjectStoriesStoryTasks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "STORY_ID",
+                        "in": "path",
+                        "description": "The ID of the story"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/attachments": {
+            "post": {
+                "summary": "Post Projects Project Stories Story Attachments",
+                "description": "Post projects project stories story attachments.",
+                "operationId": "PostProjectsProjectStoriesStoryAttachments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PROJECT_ID",
+                        "in": "path",
+                        "description": "The ID of the project to retrieve the activity for"
+                    },
+                    {
+                        "name": "STORY_ID",
+                        "in": "path",
+                        "description": "The ID of the story"
+                    }
+                ]
+            }
+        },
+        "\/source_commits": {
+            "post": {
+                "summary": "Post Source Commits",
+                "description": "Allows integration with post-commit hooks of Source Control Management (SCM) systems such as Subversion, Git, etc.",
+                "operationId": "PostSourceCommits",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
