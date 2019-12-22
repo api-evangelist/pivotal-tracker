@@ -1,5 +1,5 @@
 {
-    "id": "a8be145b96af34fad4f5a76e65c7d2e7",
+    "id": "0ed029f5d002b81ce4927e581f111d22",
     "name": "Pivotal Tracker",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "3ac5f84b3df067a2d92a415818de6768",
+            "id": "4b2d95e86165278f63f637b8bf722113",
             "name": "Get Tokens Active",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/tokens\/active",
             "description": "Returns an API token associated with the user. This method requires HTTP Basic authentication.",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "efa31bee930577be1c33ab698c1d5fb5",
+            "id": "c6e79f6d56a3ca8d89863e9c5dd67a9e",
             "name": "Post Tokens Active",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/tokens\/active",
             "description": "Returns an API token associated with the user.",
@@ -67,11 +67,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "15e05eb24aeac0ccf6c3ad975383451a",
+            "id": "50ba1537fb7369ff4b25b51559875911",
             "name": "Get Activities",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/activities",
             "description": "Retrieves the recent activity of all your projects.",
@@ -112,11 +112,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "13dc1a20dc888912fd5e62d097b9e1ad",
+            "id": "e796675d665e206a3fff4ddefcd4433d",
             "name": "Get Projects Project Activities",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/activities",
             "description": "Retrieves the recent activity of a specific project.",
@@ -157,11 +157,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "a57baab63bbaeb953baeac76ae429092",
+            "id": "24a6cc1d845951e79e66b40db490f081",
             "name": "Get Projects Project",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}",
             "description": "Retrieves information about a project.",
@@ -188,11 +188,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "147e9d71c7a7efee87e97b6fe9ca99b7",
+            "id": "9482cf47d45c8a1d57c07651a975ae38",
             "name": "Get Projects",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects",
             "description": "Retrieves all of the user's projects.",
@@ -211,11 +211,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "99fb36a82b2faca49257e17a25e0e654",
+            "id": "ae2ba10de15eac5841409157046b48e6",
             "name": "Post Projects",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects",
             "description": "Adds a new project.",
@@ -234,11 +234,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "1838db6bdeb408873c465564280bfbda",
+            "id": "78e6b70a0f7c4434a290063b7a682830",
             "name": "Get Projects Project Memberships",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/memberships",
             "description": "Retrieves all memberships for a project.",
@@ -265,11 +265,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "15e50151a7c9c34fa61766cb6fccf286",
+            "id": "4bcfdcac6e21ef4f394dba69e072dbd6",
             "name": "Post Projects Project Memberships",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/memberships",
             "description": "Adds a new membership to a project.",
@@ -296,11 +296,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "4c206a928139af5c7373d455fb7852f5",
+            "id": "affeb2ae28733e0f92752d7812ed4f34",
             "name": "Get Projects Project Memberships Membership",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/memberships\/{MEMBERSHIP_ID}",
             "description": "Retrieves information about a single membership.",
@@ -334,11 +334,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "982de4aec541af3587efa6d223ea1c3a",
+            "id": "505f4849bc2ab223a54b7406f79acee8",
             "name": "Delete Projects Project Memberships Membership",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/memberships\/{MEMBERSHIP_ID}",
             "description": "Delete projects project memberships membership.",
@@ -372,11 +372,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "195d8a877ff01b5d13d1c18dfeeb9742",
+            "id": "7415c517f808ff5cbd7a8c0ff4cba477",
             "name": "Get Projects Project Iterations",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/iterations",
             "description": "Retrieves all iterations, with stories.",
@@ -403,11 +403,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "7815e37af0044f809d5305d90fa1722d",
+            "id": "e7b691f44b6c1c3f0cdbfb6b85011689",
             "name": "Get Projects Project Iterations Done",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/iterations\/done",
             "description": "Retrieves iterations from the \"done\" group, with stories.",
@@ -448,11 +448,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "746e610eb1de98c377859e177763d06d",
+            "id": "25499e1b7a02d54b7bb21b4b321a235c",
             "name": "Get Projects Project Iterations Current",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/iterations\/current",
             "description": "Retrieves iterations from the \"current\" group, with stories.",
@@ -479,11 +479,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "476fc9e58fb58033c023cb1ba89a44b1",
+            "id": "f36cd1e9380cc9b9b2cf750ee755bf8f",
             "name": "Get Projects Project Iterations Backlog",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/iterations\/backlog",
             "description": "Retrieves iterations from the \"backlog\" group, with stories.",
@@ -524,11 +524,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "2c820ddd931f9d1f5bf7e65eb8a4319c",
+            "id": "3c7a872edb863f519f31e469614dd268",
             "name": "Get Projects Project Iterations Current Backlog",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/iterations\/current_backlog",
             "description": "Retrieves iterations from the \"current\" and \"backlog\" groups, with stories.",
@@ -569,11 +569,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "d6f77eeac249b898a8eddd7d39a50ab9",
+            "id": "426fdd34a86d0bd14debfd4d9d17af38",
             "name": "Get Projects Project Stories Story",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}",
             "description": "Retrieves information about a single story.",
@@ -607,11 +607,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "8c5c32829a5aaa7129994b53c088dd49",
+            "id": "d45bea3b40d66281de8a9bc240934694",
             "name": "Put Projects Project Stories Story",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}",
             "description": "Put projects project stories story.",
@@ -645,11 +645,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "f95adfbde663be73dedd583d07bf42cf",
+            "id": "461b33e014f98beaaff6ee8f6e118ebe",
             "name": "Delete Projects Project Stories Story",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}",
             "description": "Delete projects project stories story.",
@@ -683,11 +683,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "b977cb081a9b73c31e9aebdab37ea534",
+            "id": "ce8db3864634772be843031fb42176ba",
             "name": "Get Projects Project Stories",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories",
             "description": "Retrieves all stories for a project, or those matching filter(s)",
@@ -735,11 +735,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "7ca8fcfb532d7318200f1d56703b5d9f",
+            "id": "e31051c953d877fe8dc0fd72f6eec7eb",
             "name": "Post Projects Project Stories",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories",
             "description": "Post projects project stories.",
@@ -766,11 +766,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "0af199be64631a74aa96b91583dd3587",
+            "id": "ff72daf9b4de3688c8797b454b8361d8",
             "name": "Put Projects Project Stories Story Notes",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/notes",
             "description": "Put projects project stories story notes.",
@@ -804,11 +804,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "c8a88ca96121b4d121d1ff17c11dd92f",
+            "id": "e81201110a9ac44898a8209b8e374c69",
             "name": "Post Projects Project Stories Deliver All Finished",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/deliver_all_finished",
             "description": "Takes all finished stories and marks them as delivered. This could be used to automate a demo deploy process. The updated stories are returned as the result.",
@@ -835,11 +835,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "f78ba8a790df14f34603e9e7605e4875",
+            "id": "aeddb56e96dbb690429fffe3ebcac4c0",
             "name": "Post Projects Project Stories Story Moves",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/moves",
             "description": "Moves a story before or after another story. The moved story is returned in the response.",
@@ -873,11 +873,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "4fdf5868a90e47b9a7fc9f5065aa4afd",
+            "id": "1fac495def5acae8c05e68d877e3e118",
             "name": "Get Projects Project Stories Story Tasks Task",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks\/{TASK_ID}",
             "description": "Get projects project stories story tasks task.",
@@ -918,11 +918,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "05377b504e9b0a527259bf48bed1ae66",
+            "id": "d86e1660ba3344f7b01ac665916d4579",
             "name": "Put Projects Project Stories Story Tasks Task",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks\/{TASK_ID}",
             "description": "Put projects project stories story tasks task.",
@@ -963,11 +963,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "46ce6ea15637e0e54d845acd0c5195c8",
+            "id": "ad8eaf65aeb4837aa9dc929cf8aff65c",
             "name": "Delete Projects Project Stories Story Tasks Task",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks\/{TASK_ID}",
             "description": "Delete projects project stories story tasks task.",
@@ -1008,11 +1008,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "eeb446c0b5add8dc3f28295ed7d04935",
+            "id": "54fe2953c15bcc74f84864405fd0b7cc",
             "name": "Get Projects Project Stories Story Tasks",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks",
             "description": "Get projects project stories story tasks.",
@@ -1046,11 +1046,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "373e2ada3886e0912abb2768b5adf3e2",
+            "id": "47a527a1c8ac8959e96f360c752abea6",
             "name": "Post Projects Project Stories Story Tasks",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/tasks",
             "description": "Post projects project stories story tasks.",
@@ -1084,11 +1084,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "37ce22d12485cce8a81c0a8e3ba4ad46",
+            "id": "041555fc64388c9f83d833bb9b9ddd35",
             "name": "Post Projects Project Stories Story Attachments",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/projects\/{PROJECT_ID}\/stories\/{STORY_ID}\/attachments",
             "description": "Post projects project stories story attachments.",
@@ -1122,11 +1122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         },
         {
-            "id": "1b7ba28af4452958dac0da45ada8e224",
+            "id": "34d0cda2a3f36ac51bb9c8bada63b021",
             "name": "Post Source Commits",
             "url": "httpswww.pivotaltracker.com\/services\/v3\/\/source_commits",
             "description": "Allows integration with post-commit hooks of Source Control Management (SCM) systems such as Subversion, Git, etc.",
@@ -1145,7 +1145,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8be145b96af34fad4f5a76e65c7d2e7",
+            "collectionId": "0ed029f5d002b81ce4927e581f111d22",
             "rawModeData": ""
         }
     ]
